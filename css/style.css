@@ -121,6 +121,107 @@ body{
 #footer-icon li a i{
     color: rgb(179, 132, 143);
 } 
+/*slider*/
+#slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    overflow: hidden;
+    max-height: 600px;
+
+  }
+  .cardbox{
+    width: 80em;
+    /* width: 90%; */
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding:  0;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+  }
+  .card{
+    height: 370px !important;
+    width: 400px;
+    flex: 0 0 25%;
+    display: inline-block;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    position: relative;
+  }
+  .card p{
+    text-align: left;
+  }
+  .card img{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+  }
+  #leftbtn,#rightbtn{
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .cardbox::-webkit-scrollbar{
+    display: none;
+  }
+  .cardbox::-webkit-scrollbar-thumb{
+    display: none;
+  }
+   .hover-div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all .5s;
+    padding: 2%;
+  }
+  .card:hover .hover-div{
+    height: 120px;
+    bottom: 10%;
+  }
+   .btn-slider{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    width: 90%;
+    background-color: #393939;
+    transition: all .1s;
+    border: none;
+    color: #ffffff;
+  }
+  .btn-slider:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: #000;
+  }
+  .card:hover .btn-slider{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s;
+  }
+.slid-1 h2{
+color: #b3848f;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1500px){
     /* #banner{
         background-image: url(../assests/Capture4.PNG);
