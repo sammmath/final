@@ -134,21 +134,13 @@ body{
 
   }
   .cardbox{
-    width: 80em;
-    
+    width: 100em;
     overflow-x: scroll;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
     gap: 2rem;
-    padding:  0;
     scroll-snap-type: x mandatory;
-    overflow: hidden;
   }
   .card{
     height: 370px !important;
-    width: 400px;
     flex: 0 0 25%;
     display: inline-block;
     overflow: hidden;
@@ -217,7 +209,11 @@ color: #b3848f;
 
 
 
-
+#ul-hidden-res{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
 
 
 
@@ -230,6 +226,12 @@ color: #b3848f;
     } */
    }
   @media screen and (max-width: 1000px) {
+    #kylie-paris-res h2{
+        font-size: large;
+    }
+    #kylie-paris-res p{
+        font-size:x-small;
+    }
     #banner{
         background-image: url(../assests/Capture5.PNG);
         height: 60vh;
@@ -240,12 +242,18 @@ color: #b3848f;
   #kylie-paris div div{
     width: 100%;
   }
-  #hide-div-res{
-    display: none;
+  #ul-res{
+    display: none !important;
     opacity: 0;
     visibility: hidden;
   }
+#ul-hidden-res{
+    display: flex;
+    justify-content: space-between;
 
+    opacity: 1;
+    visibility: visible;
+}
   #kylie-paris div div{
     width: 100%;
   }
@@ -254,11 +262,45 @@ color: #b3848f;
  }
   }
   @media screen and (max-width: 900px) {
+    .hover-div{
+        font-size: smaller;
+    }
+    .card{
+        height: 300px !important;
+    }
+
     #VIRTUAL-sec{
         background-image: url(../assests/images\ \(1\).jpg);
     }
    }
+   @media screen and (max-width: 700px){
+    #kylie-paris-res h2{
+        font-size: medium;
+    }
+    #kylie-paris-res p{
+        font-size:xx-small;
+    }
+    #kylie-paris-res span button{
+        font-size: x-small;
+      padding: 2px;
+    }
+   .hover-div{
+        font-size:xx-small;
+    }
+    .card{
+        height: 200px !important;
+    }
+   }
    @media screen and (max-width: 600px){
+    #kylie-paris-res h2{
+        font-size: x-small;
+    }
+    #kylie-paris-res p{
+        font-size:50%;
+    }
+   .card{
+    width: 100%;
+   }
     #banner{
         background-image: url(../assests/Capture6.PNG);
         height: 40vh;
@@ -283,9 +325,24 @@ color: #b3848f;
 }
  
    @media screen and (max-width: 400px){
+    #logo-res{
+       width: 50%;
+    }
+    #kylie-paris-res h2{
+        font-size: xx-small;
+    }
+    #kylie-paris-res p{
+        font-size:30%;
+    }
     #foundation-banner{ 
         height: 50vh;
         font-size: 50%;
+    }
+    .hover-div{
+        font-size:xx-small;
+    }
+    .card{
+        height: 100px !important;
     }
    }
    
