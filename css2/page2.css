@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+<<<<<<< HEAD
+}
+#carouselExampleControls{
+    height: 80vh !important;
+}
+#carouselExampleControls img{
+    object-fit: fill;
+    height: 100%;
+}
+.carousel-item,.carousel-inner{
+    height: 100%;
+}
+
+#slider{
+    display: flex;
+    margin: 150px auto;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 1rem;
+    overflow: hidden;
+    max-height: 600px;
+  }
+  .cardbox{
+    width: 1000px;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 2rem 0;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+  }
+  .card{
+    flex: 0 0 25%;
+    display: inline-block;
+    width: 300px;
+=======
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #F8F1F4 !important;
+}
+#pink-nav{
+    background-color: #EFD7E5;
+    z-index: 10000;
+    top: 0px;
+}
+#nav{
+    background-color: transparent;
+    z-index: 10000;
+    top: 30px;
+}
+.middle-nav{
+    transform: translateY(-50%);
+}
+#nav:hover{
+    background-color: white;
+}
+#mega-menu{
+    top: 100px;
+    right: 0;
+    left: 0;
+    min-height: 400px;
+    visibility: hidden;
+    transition: all .2s;
+    z-index: 1000000;
+}
+#megamenu-li:hover #mega-menu{
+    opacity: 1;
+    visibility: visible;
+
+}
+#banner{
+    top: 0%;
+    height: 100vh;
+    background-image: url(../assests/020724_Lip-Butter_Site-Assets_Desktop_Kylie_REV-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#banner-div{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+#banner-div h2{
+    color: rgb(179, 132, 143);
+}
+#normal-btn{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+#normal-btn:hover{
+    background-color: #393939;
+    color: #ffffff;
+    border: none;
+}
+#hydrate div{
+    object-fit: contain;
+    width: 45%;
+    height: 90vh;
+    border-radius: 3%;
+}
+#hydrate div img{
+    width: 100%;
+    height: 100%;
+}
+#hydrate-div h2,#h2-color{
+  color: rgb(179, 132, 143);
+}
+#foundation-banner{
+    height: 90vh;
+    background-image: url(../assests/0110_Foundation_Reveal-Banner_Desktop_1728x600-ratio_OPT_4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#foundation-banner div{
+    top: 20%;
+    left: 5%;
+    width: 20%;
+}
+#foundation-banner div :nth-child(1){
+    color: white;
+    line-height: 2em;
+}
+#kylie-paris div :nth-child(1) h2{
+    color: rgb(179, 132, 143);
+}
+#kylie-paris div div p{
+    bottom: 40%;
+}
+#kylie-paris div div span{
+    bottom: 30%;
+}
+#VIRTUAL-sec{
+    background-image: url(../assests/Capture.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+#shop-footer h2{
+    color: #b3848f;
+}
+#shop-footer{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+#input-footer{
+    width: 80vh;
+}
+#btn-footer{
+    width: 20vh;
+}
+#footer-icon li a i{
+    color: rgb(179, 132, 143);
+} 
+/*slider*/
+#slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    overflow: hidden;
+    max-height: 600px;
+
+  }
+  .cardbox{
+    width: 100em;
+    overflow-x: scroll;
+    gap: 2rem;
+    scroll-snap-type: x mandatory;
+  }
+  .card{
+    height: 370px !important;
+    flex: 0 0 25%;
+    display: inline-block;
+>>>>>>> 34c43b5b6c4e1a63374d0111075e3ab4a749cb7c
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-radius: 10px;
+<<<<<<< HEAD
+    /* border: 2px solid black; */
+    scroll-snap-align: center;
+  }
+  .card p{
+    text-align: center;
+  }
+  .card h2{
+    font-size: medium;
+    padding: 4px;
+    padding-left: 6px;
+    /* position: absolute; */
+  }
+  .card img{
+    width: 100%;
+    height: 50%;
+  }
+  #leftbtn,#rightbtn{
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .cardbox::-webkit-scrollbar{
+    /* visibility: hidden; */
+    display: none;
+  }
+  .cardbox::-webkit-scrollbar-thumb{
+    /* visibility: hidden; */
+    display: none;
+  }
+  
+.nama{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+=======
+    scroll-snap-align: center;
+    position: relative;
+  }
+  .card p{
+    text-align: left;
+  }
+  .card img{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+  }
+  #leftbtn,#rightbtn{
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .cardbox::-webkit-scrollbar{
+    display: none;
+  }
+  .cardbox::-webkit-scrollbar-thumb{
+    display: none;
+  }
+   .hover-div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all .5s;
+    padding: 2%;
+  }
+  .card:hover .hover-div{
+    height: 120px;
+    bottom: 10%;
+  }
+   .btn-slider{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    width: 90%;
+    background-color: #393939;
+    transition: all .1s;
+    border: none;
+    color: #ffffff;
+  }
+  .btn-slider:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: #000;
+  }
+  .card:hover .btn-slider{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s;
+  }
+.slid-1 h2{
+color: #b3848f;
+}
+
+
+
+#ul-hidden-res{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+@media screen and (max-width: 1500px){
+    /* #banner{
+        background-image: url(../assests/Capture4.PNG);
+        height: 80vh;
+    } */
+   }
+  @media screen and (max-width: 1000px) {
+    #kylie-paris-res h2{
+        font-size: large;
+    }
+    #kylie-paris-res p{
+        font-size:x-small;
+    }
+    #banner{
+        background-image: url(../assests/Capture5.PNG);
+        height: 60vh;
+    }
+   #hydrate div{
+   width: 100%;
+  }
+  #kylie-paris div div{
+    width: 100%;
+  }
+  #ul-res{
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+#ul-hidden-res{
+    display: flex;
+    justify-content: space-between;
+
+    opacity: 1;
+    visibility: visible;
+}
+  #kylie-paris div div{
+    width: 100%;
+  }
+ .font-size-div{
+    font-size: small;
+ }
+  }
+  @media screen and (max-width: 900px) {
+    .hover-div{
+        font-size: smaller;
+    }
+    .card{
+        height: 300px !important;
+    }
+
+    #VIRTUAL-sec{
+        background-image: url(../assests/images\ \(1\).jpg);
+    }
+   }
+   @media screen and (max-width: 700px){
+    #kylie-paris-res h2{
+        font-size: medium;
+    }
+    #kylie-paris-res p{
+        font-size:xx-small;
+    }
+    #kylie-paris-res span button{
+        font-size: x-small;
+      padding: 2px;
+    }
+   .hover-div{
+        font-size:xx-small;
+    }
+    .card{
+        height: 200px !important;
+    }
+   }
+   @media screen and (max-width: 600px){
+    #kylie-paris-res h2{
+        font-size: x-small;
+    }
+    #kylie-paris-res p{
+        font-size:50%;
+    }
+   .card{
+    width: 100%;
+   }
+    #banner{
+        background-image: url(../assests/Capture6.PNG);
+        height: 40vh;
+    }
+    #hydrate div{
+        height: 500px;
+       }
+    .footer-res{
+        font-size: 50%;
+       }
+    #VIRTUAL-sec{
+        height: 50vh;
+    }
+    #foundation-banner{
+        background-image: url(../assests/Capture3.PNG);
+        height: 70vh;
+        font-size: 70%;
+    }
+    .res-div-shop-by-brand h2{
+        font-size: small;
+    }
+}
+ 
+   @media screen and (max-width: 400px){
+    #logo-res{
+       width: 50%;
+    }
+    #kylie-paris-res h2{
+        font-size: xx-small;
+    }
+    #kylie-paris-res p{
+        font-size:30%;
+    }
+    #foundation-banner{ 
+        height: 50vh;
+        font-size: 50%;
+    }
+    .hover-div{
+        font-size:xx-small;
+    }
+    .card{
+        height: 100px !important;
+    }
+   }
+   
+>>>>>>> 34c43b5b6c4e1a63374d0111075e3ab4a749cb7c
